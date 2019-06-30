@@ -1,6 +1,6 @@
 
-export default function startbutton(map) {
-  if (map[i][j] == "S") {
+export default function startbutton({map,$,i,j}) {
+  if (map[i][j] === "S") {
     $("#" + i + "-" + j).addClass("start-btn")
     // Every corner of the start-button gets a different background-image
     if (map[i - 1][j] === "O" && map[i][j - 1] === "O")

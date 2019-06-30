@@ -1,4 +1,4 @@
-export default function finishZone(map) {
+export default function finishZone({map,$,i,j}) {
   if (map[i][j] == 'F') {
     // Every corner of the finish-button also gets a different background-image
     $('#' + i + '-' + j).addClass('finish-btn')

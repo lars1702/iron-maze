@@ -1,5 +1,5 @@
-export default function floorArea (map) {
-  if (map[i][j] == "O") {
+export default function floorArea ({map,$,i,j}) {
+  if (map[i][j] === "O") {
     $("#" + i + "-" + j).addClass("game-area")
 
     // Adds borders between "wall" and "game-area"
