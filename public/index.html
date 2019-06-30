@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="game-page">
+        <h1 id="game-heading">The Mouse Maze</h1>
+        <div class="gameboard"></div>
+        <p class="hint">Click the green button to start the game!</p>
+        <audio id="hammertime" src="../src/audio/cant-touch-this.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+        <audio id="teleport" src="../src/audio/teleport.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+        <audio id="wall-hit" src="../src/audio/wall-hit.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+        <audio id="wall-lose" src="../src/audio/wall-lose.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+        <audio id="final-level-win" src="../src/audio/final-level-win.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+      </div>
+    </div>
+  </body>
+</html>
