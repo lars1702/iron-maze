@@ -3,8 +3,13 @@ let songs = {}
 
 //this function attempts to take in an audio file and play or pause it
 function toggleMusic (file) {
-  const song = songs[file] || new Audio('../src/audio/'+file)
-  if (!song || typeof file !== "string") return console.warn("No working audio file.")
+  if (!file || typeof file !== "string")
+    return console.warn("No working audio file.")
+  let song = songs[file]
+  if (!song) {
+    song = new Audio(file)
+    songs[file] = song
+  }
   if (song.paused){
     song.load()
     song.play()
