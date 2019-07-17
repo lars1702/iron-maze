@@ -7,11 +7,11 @@
     font-family: 'PirulenRg-Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('PirulenRg-Regular'), url('img/pirulen rg.woff') format('woff');
+    src: local('PirulenRg-Regular'), url('assets/img/pirulen rg.woff') format('woff');
 }
 @font-face {
     font-family: 'Dungeon';
-    src: url('img/Dungeon.ttf') format('truetype')
+    src: url('assets/img/Dungeon.ttf') format('truetype')
 }
 
 
@@ -20,7 +20,7 @@
 --------------------*/
 
 body {
-    background-image: url(img/landscape_movies-the-maze-runner-poster.jpg);
+    background-image: url(assets/img/landscape_movies-the-maze-runner-poster.jpg);
     background-size: cover;
     padding: unset;
 }
@@ -59,7 +59,7 @@ body {
 
 /* The gameboard! */
 .gameboard {
-    background-image: url(img/cartoon_dirt.png);
+    background-image: url(assets/img/cartoon_dirt.png);
     background-size: contain;
     width: 768px;
     height: 480px;
@@ -79,7 +79,7 @@ body {
 
 
 .game-area {
-    background-image: url(img/cartoon_dirt.png);
+    background-image: url(assets/img/cartoon_dirt.png);
     background-size: contain;
 }
 
@@ -94,7 +94,7 @@ body {
 
 
 .wall {
-    background-image: url(img/wall_vines4.png);
+    background-image: url(assets/img/wall_vines4.png);
     background-repeat: repeat;
 }
 
@@ -135,16 +135,16 @@ body {
 /* background-images for the finish-area */
 
 .cartoon_grass_nw {
-    background-image: url(img/cartoon_grass_nw.png)
+    background-image: url(assets/img/cartoon_grass_nw.png)
 }
 .cartoon_grass_ne {
-    background-image: url(img/cartoon_grass_ne.png)
+    background-image: url(assets/img/cartoon_grass_ne.png)
 }
 .cartoon_grass_sw {
-    background-image: url(img/cartoon_grass_sw.png)
+    background-image: url(assets/img/cartoon_grass_sw.png)
 }
 .cartoon_grass_se {
-    background-image: url(img/cartoon_grass_se.png)
+    background-image: url(assets/img/cartoon_grass_se.png)
 }
 
 
@@ -190,7 +190,7 @@ body {
 .lvl2-snakes {
     margin: 0.2% 0;
     position: absolute;
-    background-image: url(img/water_moccasin.png);
+    background-image: url(assets/img/water_moccasin.png);
     background-size: contain;
 }
 

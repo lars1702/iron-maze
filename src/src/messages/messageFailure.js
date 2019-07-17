@@ -1,6 +1,6 @@
-export function messageFailure(level, event, allMessages) {
+export function messageFailure(level, event, messages) {
   return console.warn(`FAILED to add message with params (${level}, ${event}). Available InjectMessage params:`
-  + Object.keys(allMessages[0])
+  + Object.keys(messages[0])
   .reduce((sum, key) => {
     console.log('DEBUG - typeof key === object && key !== null && Object.keys(key).length', typeof key === 'object' && key !== null && Object.keys(key).length)
     console.log('DEBUG - typeof key', typeof key)

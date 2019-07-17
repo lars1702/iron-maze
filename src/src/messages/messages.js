@@ -1,15 +1,13 @@
 import $ from "jquery"
 
-function fr(coloredElement, string) {
-  return $(coloredElement).text(string)
-}
+const fr = (coloredElement, string) => $(coloredElement).text(string)
 
 let red = "<span class='hint-red'></span>"
 let green = "<span class='hint-green'></span>"
 let black = "<span class='hint-black'></span>"
 let purple = "<span class='hint-purple'></span>"
 
-let allMessages = [
+let messages = [
   { // level 1
     "button": [
       fr(black,"Move your mouse through the maze. Don't touch "),
@@ -63,4 +61,4 @@ let allMessages = [
 ]
 
 
-export default allMessages
+export default messages

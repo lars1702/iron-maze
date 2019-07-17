@@ -1,18 +1,18 @@
-import "../styles/messages.css"
+import "./messages.css"
 import $ from "jquery"
-import allMessages from "./allMessages.js"
+import messages from "./messages.js"
 import { messageFailure } from "./messageFailure"
 
 const injectMessage = (level, event, subEvent) => {
   let spanElems
-  if (!subEvent && !Object.keys(allMessages[0]).includes(event))
-    return messageFailure(level, event, allMessages)
-  if (subEvent && !Object.keys(allMessages[0]).includes(event))
+  if (!subEvent && !Object.keys(messages[0]).includes(event))
+    return messageFailure(level, event, messages)
+  if (subEvent && !Object.keys(messages[0]).includes(event))
     return console.warn("There was subevent, but somehow you still failed?",event, subEvent, level)
   if (Boolean(event && !subEvent))
-    spanElems = allMessages[level-1] && allMessages[level-1][event]
+    spanElems = messages[level-1] && messages[level-1][event]
   else if (Boolean(event && subEvent))
-    spanElems = allMessages[level-1] && allMessages[level-1][event][subEvent]
+    spanElems = messages[level-1] && messages[level-1][event][subEvent]
   return makeMessage(spanElems)
 }
 
